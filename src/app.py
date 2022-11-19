@@ -259,7 +259,7 @@ def get_tokens(message):
         db.set_user_track_len(user_hash, duration)
         user_data = db.get_user_data(user_hash)
 
-        text = f"""loop_mode = {["loop", "track"][user_data[0]]}\ntrack len: {user_data[1]} seconds"""    
+        text = f"""loop_mode = {["track", "loop"][user_data[0]]}\ntrack len: {user_data[1]} seconds"""    
 
         bot.reply_to(
             message = message,
