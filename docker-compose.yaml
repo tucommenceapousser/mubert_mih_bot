@@ -1,0 +1,17 @@
+version: "3"
+
+volumes:
+  mubert-bot-volume:
+
+services:
+  mubert-bot:
+    build: ./src/
+    restart: always
+    environment:
+      - TEL_API_TOKEN=PLACE_TELEGRAM_BOT_API_KEY_HERE
+      - MUBERT_EMAIL=PLACE_YOUR_EMAIL_HERE_FOR_MUBERT
+      - MUBERT_LICENSE=ttmmubertlicense#f0acYBenRcfeFpNT4wpYGaTQIyDI4mJGv5MfIhBFz97NXDwDNFHmMRsBSzmGsJwbTpP1A6i07AXcIeAHo5
+      - MUBERT_TOKEN=4951f6428e83172a4f39de05d5b3ab10d58560b8
+    volumes:
+      - mubert-bot-volume:/usr/src/app/
+
