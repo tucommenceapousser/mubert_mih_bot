@@ -2,7 +2,7 @@
 ### Telegram bot for music generation via [mubert.com](mubert.com) api
 ___
 
-based on https://github.com/MubertAI/Mubert-Text-to-Music
+based on https://github.com/tucommenceapousser/Mubert-Text-to-Music
 ___
 ### Installation
 
